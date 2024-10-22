@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-class TripBolgguri extends StatefulWidget {
-  const TripBolgguri({super.key});
+class KeywordBolgguri extends StatefulWidget {
+  const KeywordBolgguri({super.key});
 
   @override
-  State<TripBolgguri> createState() => _TripBolgguriState();
+  State<KeywordBolgguri> createState() => _KeywordBolgguriState();
 }
 
-class _TripBolgguriState extends State<TripBolgguri> {
+class _KeywordBolgguriState extends State<KeywordBolgguri> {
   InAppWebViewController? _webViewController;
   final InAppWebViewSettings settings = InAppWebViewSettings(
     javaScriptEnabled: true,
@@ -35,7 +35,7 @@ class _TripBolgguriState extends State<TripBolgguri> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('경로볼꺼리'),
+        title: const Text('키워드 검색'),
         actions: <Widget>[
           _webViewController != null ? NavigationControls(webViewController: _webViewController!) : Container(),
         ],
@@ -44,7 +44,7 @@ class _TripBolgguriState extends State<TripBolgguri> {
         children: [
           Expanded(
             child: InAppWebView(
-              initialUrlRequest: URLRequest(url: WebUri('https://aws.bluelegend.net/kakao_car')),
+              initialUrlRequest: URLRequest(url: WebUri('https://aws.bluelegend.net/nearKeyword')),
               initialSettings: settings,
               onWebViewCreated: (controller) {
                 setState(() {
