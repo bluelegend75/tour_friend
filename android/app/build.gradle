@@ -12,7 +12,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "net.bluelegend.tripbolgguri"
+    namespace = "net.bluelegend.tourfriend"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -27,15 +27,15 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "net.bluelegend.tripbolgguri"
+        applicationId = "net.bluelegend.tourfriend"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
 //        versionCode = flutter.versionCode
 //        versionName = flutter.versionName
-        versionCode = 2    // 앱의 버전 코드: 앱이 업데이트 될때마다 증가
-        versionName = "2.0" // 사용자에게 보여지는 버전 이름
+        versionCode = 1    // 앱의 버전 코드: 앱이 업데이트 될때마다 증가
+        versionName = "1.0" // 사용자에게 보여지는 버전 이름
 //        ndk {
 //            debugSymbolLevel 'FULL'
 //        }

@@ -246,7 +246,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     // Icon(Icons.drive_eta_rounded), // 원하는 아이콘 추가
                     SizedBox(width: 8), // 아이콘과 텍스트 사이의 간격
-                    Text('경로볼꺼리',style: TextStyle(fontSize: 30),
+                    Text('경로 주변 탐색',style: TextStyle(fontSize: 30),
                     ),
                   ],
                 ),

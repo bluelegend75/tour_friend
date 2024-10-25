@@ -51,6 +51,11 @@ class _MukgguriState extends State<Mukgguri> {
                   _webViewController = controller;
                 });
               },
+              onReceivedServerTrustAuthRequest: (controller, request) async {
+                return ServerTrustAuthResponse(
+                  action: ServerTrustAuthResponseAction.PROCEED,
+                );
+              },
               onGeolocationPermissionsShowPrompt: (controller, origin) async {
                 return GeolocationPermissionShowPromptResponse(allow: true, origin:origin, retain: false);
               },

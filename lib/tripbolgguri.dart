@@ -35,7 +35,7 @@ class _TripBolgguriState extends State<TripBolgguri> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('경로볼꺼리'),
+        title: const Text('경로 주변 탐색'),
         actions: <Widget>[
           _webViewController != null ? NavigationControls(webViewController: _webViewController!) : Container(),
         ],
@@ -50,6 +50,11 @@ class _TripBolgguriState extends State<TripBolgguri> {
                 setState(() {
                   _webViewController = controller;
                 });
+              },
+              onReceivedServerTrustAuthRequest: (controller, request) async {
+                return ServerTrustAuthResponse(
+                  action: ServerTrustAuthResponseAction.PROCEED,
+                );
               },
               onGeolocationPermissionsShowPrompt: (controller, origin) async {
                 return GeolocationPermissionShowPromptResponse(allow: true, origin:origin, retain: false);
