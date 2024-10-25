@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                 // padding: EdgeInsets.all(25.0), // 모든 방향에 16픽셀 패딩
                 padding: EdgeInsets.symmetric(horizontal: 30.0), // 좌우에만 패딩
                 child: SelectableText(' 앱에 만족하시면 더 많은 프로그램을 개발할수 있도록 '
-                    '백수개발자를 지원해 주세요.^^\n'
+                    '백수개발자를 후원해 주세요.^^\n'
                     '- 우리은행 신동철\n'
                     '022-204590-02-101\n'
                     '앱 관련 문의: bluelegend75@gmail.com',
